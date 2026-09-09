@@ -1,0 +1,32 @@
+# Secrets - never commit these
+.env
+*.env
+openai_api_key.txt
+*_api_key.txt
+credentials.json
+secrets.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# Vector stores and generated data
+chroma/
+chroma_db/
+.chroma/
+*.sqlite3
+
+# Word lock files
+~$*.docx
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
