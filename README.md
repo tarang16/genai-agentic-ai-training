@@ -82,6 +82,24 @@ its sources and refuse when the answer is not in the corpus.
 
 See the [project README](03-projects/plantmate-rag/README.md) for details.
 
+### [PromptLab — prompt engineering, measured](03-projects/prompt-engineering/)
+
+A graded prompt-engineering project with a separate solution notebook. Learners
+write **two prompts for every task** — a fair control and an engineered version —
+run both over labelled data, and report the difference as a number rather than an
+opinion.
+
+| File | Purpose |
+|---|---|
+| [PromptLab_Problem_Statement.ipynb](03-projects/prompt-engineering/PromptLab_Problem_Statement.ipynb) | Brief, deliverables, 100-mark rubric, six tasks with `TODO` stubs |
+| [PromptLab_SOLUTION.ipynb](03-projects/prompt-engineering/PromptLab_SOLUTION.ipynb) | Full reference solution with metrics, cost analysis and an injection test |
+
+Covers zero-shot, few-shot, chain-of-thought, role prompting and technique
+selection. Few-shot is measured by classification accuracy and a confusion matrix
+over 24 labelled support tickets; chain-of-thought is measured against unit
+economics ground truth computed in Python. See the
+[project README](03-projects/prompt-engineering/README.md).
+
 ---
 
 ## Colab links
