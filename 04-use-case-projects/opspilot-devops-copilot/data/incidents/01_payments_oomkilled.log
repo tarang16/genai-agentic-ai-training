@@ -1,0 +1,37 @@
+$ kubectl describe pod payments-api-7f9c8d6b5-x2kqp -n payments
+Name:             payments-api-7f9c8d6b5-x2kqp
+Namespace:        payments
+Node:             ip-10-20-3-41.ap-south-1.compute.internal/10.20.3.41
+Status:           Running
+Containers:
+  payments-api:
+    Image:          123456789012.dkr.ecr.ap-south-1.amazonaws.com/payments-api:2.14.0
+    State:          Running
+      Started:      Tue, 06 Oct 2026 10:42:17 +0530
+    Last State:     Terminated
+      Reason:       OOMKilled
+      Exit Code:    137
+      Started:      Tue, 06 Oct 2026 10:31:02 +0530
+      Finished:     Tue, 06 Oct 2026 10:42:15 +0530
+    Ready:          True
+    Restart Count:  6
+    Limits:
+      cpu:     1
+      memory:  1Gi
+    Requests:
+      cpu:      500m
+      memory:   1Gi
+    Environment:
+      JAVA_OPTS:  -Xms512m -Xmx1536m
+      DB_URL:     jdbc:postgresql://payments-db:5432/payments
+Events:
+  Type     Reason   Age                 From     Message
+  ----     ------   ----                ----     -------
+  Warning  BackOff  3m (x14 over 52m)   kubelet  Back-off restarting failed container payments-api in pod payments-api-7f9c8d6b5-x2kqp
+
+$ kubectl logs payments-api-7f9c8d6b5-x2kqp -n payments --previous | tail -5
+2026-10-06 10:42:11.902 WARN  [http-nio-8080-exec-41] c.p.s.SettlementService - batch size 5000 exceeds soft limit
+2026-10-06 10:42:14.377 ERROR [http-nio-8080-exec-17] o.a.c.c.C.[.[.[/].[dispatcherServlet] - Servlet.service() threw exception
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.Arrays.copyOf(Arrays.java:3537)
+	at com.pay.settlement.ReportBuilder.build(ReportBuilder.java:88)

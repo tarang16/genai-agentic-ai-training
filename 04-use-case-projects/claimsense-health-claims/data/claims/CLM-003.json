@@ -1,0 +1,62 @@
+{
+  "claim_id": "CLM-003",
+  "claim_type": "reimbursement",
+  "policy": {
+    "policy_number": "CP/IND/2022/007731",
+    "inception_date": "2022-02-01",
+    "sum_insured": 500000,
+    "balance_sum_insured": 420000,
+    "age_at_inception": 41,
+    "declared_ped": []
+  },
+  "admission_date": "2026-07-05",
+  "discharge_date": "2026-07-09",
+  "submitted_days_after_discharge": 12,
+  "hospital": "Metro Care Hospital, Bengaluru",
+  "room_type": "deluxe",
+  "room_days": 4,
+  "icu_days": 0,
+  "bill": [
+    {
+      "category": "room",
+      "description": "Deluxe room @8,000 x 4 days",
+      "amount": 32000
+    },
+    {
+      "category": "nursing",
+      "description": "Nursing charges",
+      "amount": 4000
+    },
+    {
+      "category": "surgeon",
+      "description": "Surgeon, assistant and anaesthetist",
+      "amount": 60000
+    },
+    {
+      "category": "ot",
+      "description": "OT charges",
+      "amount": 25000
+    },
+    {
+      "category": "pharmacy",
+      "description": "Medicines",
+      "amount": 22000
+    },
+    {
+      "category": "consumables",
+      "description": "Consumables",
+      "amount": 8000
+    },
+    {
+      "category": "investigations",
+      "description": "LFT, USG, MRCP",
+      "amount": 12000
+    },
+    {
+      "category": "non_medical",
+      "description": "Registration, toiletries",
+      "amount": 1500
+    }
+  ],
+  "discharge_summary": "Ms. Kavya Iyer, 45 y/o, contact kavya.iyer@example.com. Presented with recurrent right upper quadrant pain. USG: multiple gall bladder calculi, CBD normal. Diagnosis: symptomatic cholelithiasis. Underwent laparoscopic cholecystectomy on 06/07/2026. Patient opted for deluxe room. Recovery uneventful."
+}

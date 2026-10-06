@@ -1,0 +1,52 @@
+{
+  "claim_id": "CLM-007",
+  "claim_type": "reimbursement",
+  "policy": {
+    "policy_number": "CP/IND/2023/008845",
+    "inception_date": "2023-05-20",
+    "sum_insured": 500000,
+    "balance_sum_insured": 500000,
+    "age_at_inception": 39,
+    "declared_ped": []
+  },
+  "admission_date": "2026-08-28",
+  "discharge_date": "2026-09-03",
+  "submitted_days_after_discharge": 14,
+  "hospital": "Riverside Hospital, Kochi",
+  "room_type": "single_private",
+  "room_days": 4,
+  "icu_days": 2,
+  "bill": [
+    {
+      "category": "room",
+      "description": "Single room @5,000 x 4 days",
+      "amount": 20000
+    },
+    {
+      "category": "icu",
+      "description": "ICU @10,000 x 2 days",
+      "amount": 20000
+    },
+    {
+      "category": "nursing",
+      "description": "Nursing",
+      "amount": 5000
+    },
+    {
+      "category": "surgeon",
+      "description": "Gastroenterologist and intensivist consultations",
+      "amount": 25000
+    },
+    {
+      "category": "pharmacy",
+      "description": "IV fluids, analgesics, medicines",
+      "amount": 34000
+    },
+    {
+      "category": "investigations",
+      "description": "Lipase, CECT abdomen, LFT",
+      "amount": 16000
+    }
+  ],
+  "discharge_summary": "Mr. Joseph Mathew, 42 y/o male, admitted with severe epigastric pain radiating to back, serum lipase 6x ULN. CECT: acute oedematous pancreatitis. Social history: alcohol intake 3-4 drinks per week. USG shows a single 6 mm gall bladder calculus. Etiology: biliary vs alcohol-related, to be evaluated on follow-up. Managed conservatively with ICU monitoring for 48 hours."
+}

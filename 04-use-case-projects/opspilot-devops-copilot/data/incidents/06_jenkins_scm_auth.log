@@ -1,0 +1,23 @@
+Started by timer
+[Pipeline] node
+Running on build-agent-eu-1 in /home/jenkins/workspace/billing-service_release
+[Pipeline] stage (Checkout)
+[Pipeline] checkout
+The recommended git tool is: NONE
+using credential bitbucket-deploy-key
+Cloning the remote Git repository
+Cloning repository git@bitbucket.org:acme/billing-service.git
+ > git init /home/jenkins/workspace/billing-service_release # timeout=10
+Fetching upstream changes from git@bitbucket.org:acme/billing-service.git
+ > git fetch --tags --force --progress -- git@bitbucket.org:acme/billing-service.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ERROR: Error cloning remote repo 'origin'
+hudson.plugins.git.GitException: Command "git fetch --tags --force --progress" returned status code 128:
+stderr: git@bitbucket.org: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+# debug env dump (should not be here)
+NEXUS_PASSWORD=Sup3rS3cret!2026
+AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
+Finished: FAILURE

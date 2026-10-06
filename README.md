@@ -1,8 +1,8 @@
 # Generative AI & Agentic AI — Training Notebooks
 
 Course materials for a hands-on Generative AI and Agentic AI programme: Retrieval
-Augmented Generation (RAG), LangChain / LangGraph / LangSmith, and two end-to-end
-projects.
+Augmented Generation (RAG), LangChain / LangGraph / LangSmith, and end-to-end
+projects, including four built from the use cases defined in the course use-case sheet.
 
 Every notebook runs top to bottom in **Google Colab** with nothing but an OpenAI
 API key. Each folder is a stage of the course — work through them in order.
@@ -99,6 +99,23 @@ selection. Few-shot is measured by classification accuracy and a confusion matri
 over 24 labelled support tickets; chain-of-thought is measured against unit
 economics ground truth computed in Python. See the
 [project README](03-projects/prompt-engineering/README.md).
+
+---
+
+## 04 · Use-case projects
+
+Four end-to-end projects built from the use cases defined in the course use-case sheet. Each one brings together
+the concepts covered across the curriculum modules. Each is a Python package
+with a LangGraph pipeline, a Streamlit app, a Colab-ready walkthrough notebook, an evaluation script with a golden
+set, and a test suite that runs without an API key. See the [section README](04-use-case-projects/README.md) for
+how the other use cases in the sheet map onto them.
+
+| Project | Use case | Highlights |
+|---|---|---|
+| [OpsPilot](04-use-case-projects/opspilot-devops-copilot/) | DevOps: diagnose Kubernetes, Jenkins and Terraform failures from logs | Secret redaction, hybrid RAG with RRF, human approval via `interrupt()` |
+| [TriageDesk](04-use-case-projects/triagedesk-support-triage/) | Customer support: is this ticket a known issue? | Custom **MCP server**, link-following retrieval, injection and safety guardrails |
+| [PRDForge](04-use-case-projects/prdforge-transcripts-to-prd/) | Product: transcripts, Slack and feedback into a PRD | Map-reduce with `Send`, conflict detection, deterministic critic + revise loop |
+| [ClaimSense](04-use-case-projects/claimsense-health-claims/) | Health insurance: claim adjudication | LLM reads, rules decide, guards check every rupee, humans sign off |
 
 ---
 

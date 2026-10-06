@@ -1,0 +1,27 @@
+Meeting: Territory Alerts - kickoff
+Date: 2026-09-15
+Attendees: Priya (Product Manager), Arjun (Head of Sales, Cardio franchise), Meera (Field Operations Manager), Kiran (Data Engineering Lead), David (Compliance)
+
+Priya: Thanks all. The ask from leadership is simple to say: reps find out about a prescribing drop in their territory three or four weeks too late. Let's figure out what we'd build.
+Arjun: Right now a rep sees the monthly Rx report around the 10th of the following month. By then a cardiologist who switched to a competitor has been writing the other brand for five, six weeks.
+Arjun: Last quarter we lost roughly 8 percent share in the West region and nobody flagged it until the QBR.
+Meera: The reps do look at the dashboard, but it has 40 charts. They don't know where to look. They need to be told "these five doctors need a visit this week".
+Priya: So an alert, not another chart.
+Arjun: Yes. And I want it daily. If a top-decile HCP drops, I want the rep to know the next morning.
+Meera: Daily will be noise. Reps already get 30 emails a day from marketing. If we push daily alerts they will mute them in a week. A weekly digest on Monday morning, before they plan the week, is what they will actually read.
+Arjun: Weekly is too slow for the top accounts.
+Priya: Let's park daily versus weekly, I'll note it as open. Kiran, what's the data reality?
+Kiran: We get IQVIA weekly prescription data, NRx and TRx at HCP level, landing every Tuesday with a one-week lag. So the freshest data is about 8 to 10 days old. Daily alerts would just repeat the same data seven times.
+Arjun: Hmm. OK, that changes things.
+Kiran: We also have the CRM call data from Veeva, which is daily. So we can say "Dr X dropped 30 percent and nobody has visited in 45 days".
+Meera: That combination is gold. Drop plus no recent visit.
+David: Two things from compliance. One, everything is HCP-level, no patient-level data can ever appear in this, and we must not imply we know anything about individual patients. Two, alerts can't tell reps to promote off-label. The text has to be reviewed by medical-legal once, as a template.
+Priya: So templated alert text, not free-form generated text.
+David: Correct. Templated, approved, versioned.
+Priya: What counts as a "drop"?
+Kiran: My suggestion is a 4-week rolling TRx versus the previous 4 weeks, and flag if it falls more than 20 percent, but only for HCPs with at least 10 TRx in the baseline. Otherwise small numbers create false alarms.
+Arjun: And only top three deciles. Reps can't act on every doctor.
+Priya: Success metric?
+Arjun: Time from drop to rep visit. Today it's about 35 days. I'd want it under 10.
+Meera: And rep engagement: are they opening the alerts. If open rate is under 50 percent we've failed.
+Priya: Great. Action items: Kiran to check if the 20 percent threshold would have caught the West region drop. Meera to get 5 reps for interviews. David to share the template approval process.

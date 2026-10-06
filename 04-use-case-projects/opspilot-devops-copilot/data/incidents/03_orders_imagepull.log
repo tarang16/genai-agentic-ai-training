@@ -1,0 +1,10 @@
+$ kubectl describe pod orders-worker-66f7b9c8d4-9hjkt -n orders | tail -8
+Events:
+  Type     Reason     Age                From               Message
+  ----     ------     ----               ----               -------
+  Normal   Scheduled  4m                 default-scheduler  Successfully assigned orders/orders-worker-66f7b9c8d4-9hjkt to aks-userpool-31337-vmss000002
+  Normal   Pulling    2m (x4 over 4m)    kubelet            Pulling image "acmeregistry.azurecr.io/orders-worker:1.9.3"
+  Warning  Failed     2m (x4 over 4m)    kubelet            Failed to pull image "acmeregistry.azurecr.io/orders-worker:1.9.3": rpc error: code = NotFound desc = failed to pull and unpack image: manifest unknown: manifest tagged by "1.9.3" is not found
+  Warning  Failed     2m (x4 over 4m)    kubelet            Error: ErrImagePull
+  Normal   BackOff    15s (x10 over 4m)  kubelet            Back-off pulling image "acmeregistry.azurecr.io/orders-worker:1.9.3"
+  Warning  Failed     15s (x10 over 4m)  kubelet            Error: ImagePullBackOff

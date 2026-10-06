@@ -1,0 +1,22 @@
+{
+  "_comment": "What a competent PM would take from the sample sources. evaluate.py scores the generated PRD against this.",
+  "conflicts": [
+    {"name": "alert frequency (daily vs weekly)", "keywords": ["daily", "weekly"]},
+    {"name": "manager visibility (alert-level vs aggregate)", "keywords": ["manager"]}
+  ],
+  "must_capture_constraints": [
+    {"name": "no patient-level data", "evidence_ids": ["M1-14"]},
+    {"name": "templated, medical-legal approved alert text", "evidence_ids": ["M1-14", "M1-16", "S-04"]},
+    {"name": "no SMS / HCP names on personal devices", "evidence_ids": ["S-05", "S-06"]},
+    {"name": "weekly data with ~1 week lag", "evidence_ids": ["M1-10"]}
+  ],
+  "must_be_out_of_scope": [
+    {"name": "competitor attribution at HCP level", "keywords": ["competitor"]}
+  ],
+  "must_have_story_topics": [
+    {"name": "Monday weekly digest", "keywords": ["monday", "weekly", "digest"]},
+    {"name": "explain why flagged", "keywords": ["why", "reason", "dropped", "last visit", "explain"]},
+    {"name": "dismiss / snooze with reason", "keywords": ["dismiss", "snooze", "known reason"]},
+    {"name": "offline on iPad", "keywords": ["offline"]}
+  ]
+}

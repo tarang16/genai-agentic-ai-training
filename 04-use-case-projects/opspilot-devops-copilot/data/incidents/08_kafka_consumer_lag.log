@@ -1,0 +1,10 @@
+$ kafka-consumer-groups.sh --bootstrap-server kafka-0.kafka:9092 --describe --group invoice-consumers
+GROUP              TOPIC        PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG      CONSUMER-ID
+invoice-consumers  invoices.v2  0          1882301         2410992         528691   consumer-1-9f2c
+invoice-consumers  invoices.v2  1          1879955         2409811         529856   consumer-2-1ab7
+invoice-consumers  invoices.v2  2          1880417         2412009         531592   -
+
+$ grep -i rebalance /var/log/invoice-consumer/app.log | tail -3
+2026-10-06 03:10:44 WARN  [Consumer clientId=consumer-3] Member consumer-3-55de sending LeaveGroup request to coordinator due to consumer poll timeout has expired.
+2026-10-06 03:10:44 INFO  [Consumer clientId=consumer-1] Request joining group due to: group is already rebalancing
+2026-10-06 03:11:02 INFO  [Consumer clientId=consumer-1] Successfully joined group with generation Generation{generationId=412}

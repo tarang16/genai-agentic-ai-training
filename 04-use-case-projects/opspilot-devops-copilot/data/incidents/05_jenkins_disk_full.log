@@ -1,0 +1,20 @@
+Started by GitLab push by release-bot
+Running in Durability level: MAX_SURVIVABILITY
+[Pipeline] node
+Running on linux-agent-03 in /var/lib/jenkins/workspace/web-portal_main
+[Pipeline] stage (Checkout)
+[Pipeline] checkout
+ > git fetch --tags --force --progress -- https://gitlab.internal/web/web-portal.git +refs/heads/*:refs/remotes/origin/*
+[Pipeline] stage (Build image)
+[Pipeline] sh
++ docker build -t registry.internal/web-portal:4.2.0-218 .
+Sending build context to Docker daemon  412.6MB
+Step 1/14 : FROM node:20-alpine AS build
+Step 6/14 : RUN npm ci
+npm WARN deprecated inflight@1.0.6: This module is not supported
+Step 9/14 : RUN npm run build
+write /var/lib/docker/overlay2/7c1e9b0a/diff/app/dist/main.4f2a.js: no space left on device
+failed to register layer: Error processing tar file(exit status 1): write /usr/lib/node_modules/.staging: No space left on device
+[Pipeline] }
+ERROR: script returned exit code 1
+Finished: FAILURE

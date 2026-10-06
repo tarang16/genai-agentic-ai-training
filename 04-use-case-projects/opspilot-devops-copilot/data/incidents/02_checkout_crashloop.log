@@ -1,0 +1,21 @@
+$ kubectl get pods -n checkout
+NAME                            READY   STATUS             RESTARTS      AGE
+checkout-web-5d8b7c9f4-lm2zt    0/1     CrashLoopBackOff   9 (41s ago)   23m
+checkout-web-5d8b7c9f4-q8wpr    0/1     CrashLoopBackOff   9 (38s ago)   23m
+
+$ kubectl describe pod checkout-web-5d8b7c9f4-lm2zt -n checkout | sed -n '/Last State/,/Restart/p'
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    1
+    Restart Count:  9
+
+$ kubectl logs checkout-web-5d8b7c9f4-lm2zt -n checkout --previous
+2026-10-06T05:12:44Z INFO  Starting checkout-web v3.8.0 (commit 9e1a2f4)
+2026-10-06T05:12:44Z INFO  Loading configuration from environment
+2026-10-06T05:12:45Z ERROR Configuration error: required environment variable REDIS_URL is not set
+2026-10-06T05:12:45Z FATAL Exiting with status 1
+
+$ kubectl get events -n checkout --sort-by=.lastTimestamp | tail -3
+23m   Normal    ScalingReplicaSet   deployment/checkout-web   Scaled up replica set checkout-web-5d8b7c9f4 to 2
+2m    Warning   BackOff             pod/checkout-web-5d8b7c9f4-lm2zt   Back-off restarting failed container checkout-web
+1m    Warning   BackOff             pod/checkout-web-5d8b7c9f4-q8wpr   Back-off restarting failed container checkout-web

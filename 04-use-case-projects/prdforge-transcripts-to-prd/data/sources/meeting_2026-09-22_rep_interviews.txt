@@ -1,0 +1,18 @@
+Meeting: Territory Alerts - rep interview synthesis
+Date: 2026-09-22
+Attendees: Priya (Product Manager), Meera (Field Operations Manager), Sana (UX Researcher)
+
+Sana: We spoke with five reps, two from West, two from North, one from South. Summary first, then quotes.
+Sana: All five said they plan their week on Sunday evening or Monday morning. None of them plan daily.
+Sana: Quote from a West rep: "If I get a ping every day I'll just swipe it away. Give me a list on Monday and I'll build my route around it."
+Sana: Four of five want to see why the doctor is flagged: what dropped, by how much, and when they last visited.
+Sana: Three reps asked to be able to mark an alert as "known reason", for example the doctor is on leave or retired, so it stops showing up.
+Meera: That's important, otherwise the same five doctors show up every week and they lose trust.
+Sana: Two reps work mostly offline in rural territories. They want the list to be available on the iPad without network.
+Sana: One North rep said the current dashboard takes about 20 seconds to load on 4G and she gives up.
+Priya: Anything on managers?
+Sana: Reps were nervous that managers would use alerts to micromanage. One said: "If my manager sees every alert I haven't acted on, I'm going to spend my week explaining instead of selling."
+Meera: Managers do need a roll-up though. Maybe aggregate only, not alert-by-alert.
+Priya: Let's note manager visibility as an open question; Arjun will want more.
+Sana: Last point: two reps asked for the competitor brand that gained, if we know it.
+Priya: Kiran said in Slack we can't attribute switching to a specific competitor at HCP level reliably, so that's a no for v1.

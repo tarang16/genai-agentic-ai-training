@@ -1,0 +1,11 @@
++ curl -sS https://api.partner-gateway.acme.in/health
+curl: (60) SSL certificate problem: certificate has expired
+More details here: https://curl.se/docs/sslcerts.html
+
+$ kubectl logs deploy/partner-sync -n integrations --tail=3
+2026-10-06T07:00:01Z ERROR sync failed: Get "https://api.partner-gateway.acme.in/v1/orders": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2026-10-06T07:00:01Z is after 2026-10-05T23:59:59Z
+2026-10-06T07:05:01Z ERROR sync failed: Get "https://api.partner-gateway.acme.in/v1/orders": tls: failed to verify certificate: x509: certificate has expired or is not yet valid
+
+$ kubectl get certificate -n integrations
+NAME                  READY   SECRET                    AGE
+partner-gateway-tls   False   partner-gateway-tls       371d

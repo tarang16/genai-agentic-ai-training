@@ -1,0 +1,49 @@
+{
+  "claim_id": "CLM-002",
+  "claim_type": "cashless",
+  "policy": {
+    "policy_number": "CP/IND/2025/019876",
+    "inception_date": "2025-06-15",
+    "sum_insured": 300000,
+    "balance_sum_insured": 300000,
+    "age_at_inception": 58,
+    "declared_ped": [
+      "Hypertension"
+    ]
+  },
+  "admission_date": "2026-08-20",
+  "discharge_date": "2026-08-20",
+  "submitted_days_after_discharge": 0,
+  "hospital": "ClearView Eye Institute, Nagpur",
+  "room_type": "day_care",
+  "room_days": 0,
+  "icu_days": 0,
+  "bill": [
+    {
+      "category": "surgeon",
+      "description": "Phacoemulsification surgeon fee",
+      "amount": 22000
+    },
+    {
+      "category": "ot",
+      "description": "OT charges",
+      "amount": 8000
+    },
+    {
+      "category": "implants",
+      "description": "Foldable IOL (monofocal)",
+      "amount": 15000
+    },
+    {
+      "category": "pharmacy",
+      "description": "Eye drops and medicines",
+      "amount": 2500
+    },
+    {
+      "category": "investigations",
+      "description": "Biometry, A-scan",
+      "amount": 1500
+    }
+  ],
+  "discharge_summary": "Mrs. Sunita Rao, 59 y/o female, policy CP/IND/2025/019876. Diagnosis: senile mature cataract, right eye. Underwent phacoemulsification with foldable IOL implantation, right eye, under local anaesthesia as a day care procedure. Known hypertensive on amlodipine, BP controlled. Discharged same day."
+}

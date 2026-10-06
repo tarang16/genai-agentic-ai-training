@@ -1,0 +1,52 @@
+{
+  "claim_id": "CLM-004",
+  "claim_type": "reimbursement",
+  "policy": {
+    "policy_number": "CP/IND/2021/002210",
+    "inception_date": "2021-01-10",
+    "sum_insured": 300000,
+    "balance_sum_insured": 300000,
+    "age_at_inception": 63,
+    "declared_ped": []
+  },
+  "admission_date": "2026-06-14",
+  "discharge_date": "2026-06-19",
+  "submitted_days_after_discharge": 35,
+  "hospital": "City General Hospital, Lucknow",
+  "room_type": "twin_sharing",
+  "room_days": 5,
+  "icu_days": 0,
+  "bill": [
+    {
+      "category": "room",
+      "description": "Twin sharing @3,000 x 5 days",
+      "amount": 15000
+    },
+    {
+      "category": "nursing",
+      "description": "Nursing",
+      "amount": 2500
+    },
+    {
+      "category": "surgeon",
+      "description": "Physician and pulmonologist consultations",
+      "amount": 12000
+    },
+    {
+      "category": "pharmacy",
+      "description": "IV antibiotics and medicines",
+      "amount": 28000
+    },
+    {
+      "category": "investigations",
+      "description": "Chest X-ray, CBC, cultures, ABG",
+      "amount": 15000
+    },
+    {
+      "category": "non_medical",
+      "description": "Attendant food",
+      "amount": 800
+    }
+  ],
+  "discharge_summary": "Mr. Harish Chandra Verma, 68 y/o male, admitted with fever, productive cough and breathlessness for 4 days. Chest X-ray: right lower lobe consolidation. Diagnosis: community acquired pneumonia. Treated with IV ceftriaxone and azithromycin. Non-smoker, no alcohol. Discharged on oral antibiotics."
+}

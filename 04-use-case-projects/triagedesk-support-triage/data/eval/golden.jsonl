@@ -1,0 +1,6 @@
+{"ticket_id": "FD-21004", "expected_verdict": "known_bug", "expected_refs": ["DISP-430"], "must_escalate": false}
+{"ticket_id": "FD-21005", "expected_verdict": "known_bug", "expected_refs": ["DISP-455"], "must_escalate": false}
+{"ticket_id": "FD-21006", "expected_verdict": "known_issue", "expected_refs": ["KB-1005"], "must_escalate": false}
+{"ticket_id": "FD-21007", "expected_verdict": "new_issue", "expected_refs": [], "must_escalate": true}
+{"ticket_id": "FD-21008", "expected_verdict": "new_issue", "expected_refs": [], "must_escalate": true}
+{"ticket_id": "FD-21009", "expected_verdict": "new_issue", "expected_refs": [], "must_escalate": true}

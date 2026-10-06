@@ -1,0 +1,67 @@
+{
+  "claim_id": "CLM-008",
+  "claim_type": "cashless",
+  "policy": {
+    "policy_number": "CP/IND/2019/000918",
+    "inception_date": "2019-11-01",
+    "sum_insured": 1000000,
+    "balance_sum_insured": 1000000,
+    "age_at_inception": 50,
+    "declared_ped": []
+  },
+  "admission_date": "2026-09-14",
+  "discharge_date": "2026-09-22",
+  "submitted_days_after_discharge": 0,
+  "hospital": "HeartWell Institute, Chennai",
+  "room_type": "single_private",
+  "room_days": 5,
+  "icu_days": 3,
+  "bill": [
+    {
+      "category": "room",
+      "description": "Single room @9,000 x 5 days",
+      "amount": 45000
+    },
+    {
+      "category": "icu",
+      "description": "CTVS ICU @18,000 x 3 days",
+      "amount": 54000
+    },
+    {
+      "category": "nursing",
+      "description": "Nursing",
+      "amount": 12000
+    },
+    {
+      "category": "surgeon",
+      "description": "Cardiac surgeon, perfusionist, anaesthetist",
+      "amount": 150000
+    },
+    {
+      "category": "ot",
+      "description": "Cardiac OT charges",
+      "amount": 60000
+    },
+    {
+      "category": "pharmacy",
+      "description": "Medicines",
+      "amount": 48000
+    },
+    {
+      "category": "consumables",
+      "description": "Oxygenator and surgical consumables",
+      "amount": 32000
+    },
+    {
+      "category": "investigations",
+      "description": "Angiography, echo, labs",
+      "amount": 21000
+    },
+    {
+      "category": "non_medical",
+      "description": "Admission kit, laundry",
+      "amount": 3000
+    }
+  ],
+  "discharge_summary": "Mr. S. Venkatesh, 57 y/o male, presented with unstable angina. Coronary angiography: triple vessel disease. Underwent CABG x3 on 15/09/2026. No prior cardiac history. Non-smoker, occasional social alcohol, not contributory. Discharged in stable condition on day 8."
+}

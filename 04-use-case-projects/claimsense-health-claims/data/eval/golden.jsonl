@@ -1,0 +1,8 @@
+{"claim_id": "CLM-001", "decision": "approve", "payable": 115000, "clauses": ["5.5"], "route": "auto"}
+{"claim_id": "CLM-002", "decision": "reject", "payable": 0, "clauses": ["3.2"], "route": "human_review"}
+{"claim_id": "CLM-003", "decision": "partial", "payable": 117625, "clauses": ["4.1", "5.5"], "route": "human_review"}
+{"claim_id": "CLM-004", "decision": "partial", "payable": 58000, "clauses": ["4.2", "5.5", "6.1"], "route": "human_review"}
+{"claim_id": "CLM-005", "decision": "reject", "payable": 0, "clauses": ["3.3"], "route": "human_review"}
+{"claim_id": "CLM-006", "decision": "approve", "payable": 116000, "clauses": ["3.1"], "route": "auto"}
+{"claim_id": "CLM-007", "decision": "refer", "payable": null, "clauses": ["5.3"], "route": "human_review"}
+{"claim_id": "CLM-008", "decision": "approve", "payable": 422000, "clauses": ["5.5"], "route": "human_review"}

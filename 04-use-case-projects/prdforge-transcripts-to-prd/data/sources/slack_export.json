@@ -1,0 +1,15 @@
+{
+  "channel": "#proj-territory-alerts",
+  "messages": [
+    {"ts": "2026-09-16T09:12:00", "user": "kiran", "text": "Back-tested the 20% / 4-week rule on West Q2. It would have flagged 61 of the 74 HCPs that later switched, median 3 weeks earlier than the QBR. False positive rate about 18%."},
+    {"ts": "2026-09-16T09:20:00", "user": "arjun", "text": "3 weeks earlier is huge. Can we get the false positives down?"},
+    {"ts": "2026-09-16T09:41:00", "user": "kiran", "text": "Requiring 2 consecutive weeks below threshold drops FP to ~9% but we lose 1 week of lead time. Trade-off for product to decide."},
+    {"ts": "2026-09-17T11:05:00", "user": "david", "text": "Template approval process: medical-legal review takes 10 working days per template version. Plan for that before launch. Also alerts must be retained for 2 years for audit."},
+    {"ts": "2026-09-17T11:30:00", "user": "meera", "text": "Field ops view: please no SMS. Reps use personal phones for SMS and we can't send HCP names there. In-app + email only."},
+    {"ts": "2026-09-17T11:34:00", "user": "david", "text": "+1 to Meera. HCP names over SMS to personal devices is a no from compliance."},
+    {"ts": "2026-09-18T15:02:00", "user": "arjun", "text": "For top-decile HCPs I still want something faster than weekly. Can we at least do a mid-week push for decile 10 only?"},
+    {"ts": "2026-09-18T15:10:00", "user": "kiran", "text": "Data lands Tuesday, so a Wednesday push for decile 10 is technically possible. Monday digest for everyone else."},
+    {"ts": "2026-09-19T10:00:00", "user": "kiran", "text": "Re competitor attribution: we only have market-level share, not which brand each HCP switched to. Not reliable at HCP level."},
+    {"ts": "2026-09-23T08:45:00", "user": "priya", "text": "Rep interviews summary is in the doc. Big themes: weekly planning rhythm, explain-the-why, snooze/dismiss with reason, offline iPad."}
+  ]
+}

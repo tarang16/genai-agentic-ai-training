@@ -1,0 +1,59 @@
+{
+  "claim_id": "CLM-005",
+  "claim_type": "reimbursement",
+  "policy": {
+    "policy_number": "CP/IND/2025/003390",
+    "inception_date": "2025-03-01",
+    "sum_insured": 500000,
+    "balance_sum_insured": 500000,
+    "age_at_inception": 52,
+    "declared_ped": [
+      "Type 2 diabetes mellitus"
+    ]
+  },
+  "admission_date": "2026-09-02",
+  "discharge_date": "2026-09-07",
+  "submitted_days_after_discharge": 9,
+  "hospital": "LifeLine Hospital, Indore",
+  "room_type": "single_private",
+  "room_days": 5,
+  "icu_days": 0,
+  "bill": [
+    {
+      "category": "room",
+      "description": "Single room @5,000 x 5 days",
+      "amount": 25000
+    },
+    {
+      "category": "nursing",
+      "description": "Nursing",
+      "amount": 3500
+    },
+    {
+      "category": "surgeon",
+      "description": "Surgical debridement fees",
+      "amount": 30000
+    },
+    {
+      "category": "ot",
+      "description": "OT charges",
+      "amount": 12000
+    },
+    {
+      "category": "pharmacy",
+      "description": "Insulin, IV antibiotics",
+      "amount": 26000
+    },
+    {
+      "category": "consumables",
+      "description": "Dressings",
+      "amount": 9000
+    },
+    {
+      "category": "investigations",
+      "description": "HbA1c, culture, X-ray foot",
+      "amount": 7000
+    }
+  ],
+  "discharge_summary": "Mr. Anil Joshi, 53 y/o, known case of type 2 diabetes mellitus for 8 years with poor glycaemic control (HbA1c 10.2%). Admitted with infected ulcer over left great toe with cellulitis. Diagnosis: diabetic foot ulcer, Wagner grade 2, with cellulitis. Underwent surgical debridement. Insulin regimen optimised."
+}

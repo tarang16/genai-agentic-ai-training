@@ -1,0 +1,14 @@
+$ kubectl get pods -n analytics -o wide
+NAME                              READY   STATUS    RESTARTS   AGE   NODE
+spark-driver-etl-nightly-0        0/1     Pending   0          18m   <none>
+
+$ kubectl describe pod spark-driver-etl-nightly-0 -n analytics | tail -4
+Events:
+  Type     Reason            Age                 From               Message
+  ----     ------            ----                ----               -------
+  Warning  FailedScheduling  2m (x9 over 18m)    default-scheduler  0/6 nodes are available: 3 Insufficient memory, 3 node(s) had untolerated taint {workload: gpu}. preemption: 0/6 nodes are available: 3 No preemption victims found for incoming pod, 3 Preemption is not helpful for scheduling.
+
+$ kubectl -n kube-system logs deploy/cluster-autoscaler --tail=3
+I1006 01:14:02.118 scale_up.go:449] Pod analytics/spark-driver-etl-nightly-0 is unschedulable
+I1006 01:14:02.118 scale_up.go:633] Skipping node group eks-general-ng - max node group size reached
+I1006 01:14:02.119 scale_up.go:301] No expansion options

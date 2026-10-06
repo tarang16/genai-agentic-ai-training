@@ -1,0 +1,57 @@
+{
+  "claim_id": "CLM-006",
+  "claim_type": "cashless",
+  "policy": {
+    "policy_number": "CP/IND/2026/015502",
+    "inception_date": "2026-08-25",
+    "sum_insured": 500000,
+    "balance_sum_insured": 500000,
+    "age_at_inception": 29,
+    "declared_ped": []
+  },
+  "admission_date": "2026-09-10",
+  "discharge_date": "2026-09-12",
+  "submitted_days_after_discharge": 0,
+  "hospital": "Apex Ortho & Trauma Centre, Jaipur",
+  "room_type": "single_private",
+  "room_days": 2,
+  "icu_days": 0,
+  "bill": [
+    {
+      "category": "room",
+      "description": "Single room @4,000 x 2 days",
+      "amount": 8000
+    },
+    {
+      "category": "nursing",
+      "description": "Nursing",
+      "amount": 2000
+    },
+    {
+      "category": "surgeon",
+      "description": "Orthopaedic surgeon and anaesthetist",
+      "amount": 40000
+    },
+    {
+      "category": "ot",
+      "description": "OT charges",
+      "amount": 18000
+    },
+    {
+      "category": "implants",
+      "description": "Locking plate and screws",
+      "amount": 35000
+    },
+    {
+      "category": "pharmacy",
+      "description": "Medicines",
+      "amount": 9000
+    },
+    {
+      "category": "investigations",
+      "description": "X-ray wrist, pre-op tests",
+      "amount": 4000
+    }
+  ],
+  "discharge_summary": "Ms. Neha Kulkarni, 29 y/o female, sustained a fall from a two-wheeler (road traffic accident) on 10/09/2026. MLC No. 2231/26 registered. X-ray: displaced distal radius fracture, left. Underwent open reduction and internal fixation with locking plate. Discharged with cast."
+}

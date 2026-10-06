@@ -1,0 +1,9 @@
+{"incident": "01_payments_oomkilled.log", "platform": "kubernetes", "signals": ["k8s_oomkilled"], "expected_runbook": "k8s-oomkilled.md", "expected_outcome": "diagnose", "root_cause_keywords": ["xmx", "limit"]}
+{"incident": "02_checkout_crashloop.log", "platform": "kubernetes", "signals": ["k8s_crashloop"], "expected_runbook": "k8s-crashloopbackoff.md", "expected_outcome": "diagnose", "root_cause_keywords": ["redis_url"]}
+{"incident": "03_orders_imagepull.log", "platform": "kubernetes", "signals": ["k8s_imagepull"], "expected_runbook": "k8s-imagepull.md", "expected_outcome": "diagnose", "root_cause_keywords": ["tag", "1.9.3"]}
+{"incident": "04_analytics_pending.log", "platform": "kubernetes", "signals": ["k8s_scheduling"], "expected_runbook": "k8s-scheduling.md", "expected_outcome": "diagnose", "root_cause_keywords": ["max node group", "memory"]}
+{"incident": "05_jenkins_disk_full.log", "platform": "jenkins", "signals": ["jenkins_disk"], "expected_runbook": "jenkins-pipeline-failures.md#disk-full-on-agent", "expected_outcome": "diagnose", "root_cause_keywords": ["space"]}
+{"incident": "06_jenkins_scm_auth.log", "platform": "jenkins", "signals": ["jenkins_scm_auth"], "expected_runbook": "jenkins-pipeline-failures.md#scm-checkout-authentication-failure", "expected_outcome": "diagnose", "root_cause_keywords": ["key"]}
+{"incident": "07_terraform_state_lock.log", "platform": "terraform", "signals": ["tf_state_lock"], "expected_runbook": "terraform-state-and-auth.md#state-lock-held", "expected_outcome": "diagnose", "root_cause_keywords": ["lock"]}
+{"incident": "08_kafka_consumer_lag.log", "platform": "unknown", "signals": [], "expected_runbook": null, "expected_outcome": "escalate", "root_cause_keywords": []}
+{"incident": "09_ingress_cert_expired.log", "platform": "kubernetes", "signals": ["tls_expired"], "expected_runbook": "tls-and-dns.md#expired-or-untrusted-certificate", "expected_outcome": "diagnose", "root_cause_keywords": ["expired"]}

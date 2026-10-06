@@ -1,0 +1,53 @@
+[
+  {
+    "key": "DISP-412",
+    "summary": "VX2780/TD2455 USB-C DP Alt Mode handshake fails on macOS 15",
+    "status": "Done",
+    "fix_version": "FW 1.0.8",
+    "products": [
+      "VX2780",
+      "TD2455"
+    ],
+    "workaround": "Update firmware to 1.0.8 (KB-1004)."
+  },
+  {
+    "key": "DISP-430",
+    "summary": "Eco mode auto power-off triggers during active use (firmware 1.0.7)",
+    "status": "Done",
+    "fix_version": "FW 1.0.8",
+    "products": [
+      "VX2780"
+    ],
+    "workaround": "Update firmware to 1.0.8, or disable Eco Mode in OSD."
+  },
+  {
+    "key": "DISP-455",
+    "summary": "TD2455 touch unresponsive after Windows 11 24H2 update / resume from sleep",
+    "status": "In Progress",
+    "fix_version": "Touch driver 3.3 (planned)",
+    "products": [
+      "TD2455"
+    ],
+    "workaround": "Reinstall touch driver 3.2 and disable USB selective suspend."
+  },
+  {
+    "key": "DISP-471",
+    "summary": "XG2431 OSD freezes when switching to PIP mode at 240Hz",
+    "status": "Open",
+    "fix_version": "",
+    "products": [
+      "XG2431"
+    ],
+    "workaround": "Lower refresh to 165Hz before enabling PIP."
+  },
+  {
+    "key": "DISP-480",
+    "summary": "VX3218 KVM switch does not pass keyboard after input change",
+    "status": "Open",
+    "fix_version": "",
+    "products": [
+      "VX3218"
+    ],
+    "workaround": "Re-plug the USB upstream cable after switching input."
+  }
+]

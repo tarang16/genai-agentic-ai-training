@@ -1,0 +1,21 @@
+$ terraform plan -out=tfplan -var-file=env/prod.tfvars
+Acquiring state lock. This may take a few moments...
+╷
+│ Error: Error acquiring the state lock
+│
+│ Error message: operation error DynamoDB: PutItem, https response error StatusCode: 400,
+│ RequestID: 8KQ2C4LJ9P0, ConditionalCheckFailedException: The conditional request failed
+│ Lock Info:
+│   ID:        5c7e2a91-3b44-8f0e-1d2c-6a9b0e4f7d13
+│   Path:      acme-tf-state/prod/network/terraform.tfstate
+│   Operation: OperationTypeApply
+│   Who:       jenkins@build-agent-eu-2
+│   Version:   1.9.5
+│   Created:   2026-10-05 22:41:07.118 +0000 UTC
+│   Info:
+│
+│ Terraform acquires a state lock to protect the state from being written
+│ by multiple users at the same time. Please resolve the issue above and try
+│ again. For most commands, you can disable locking with the "-lock=false"
+│ flag, but this is not recommended.
+╵

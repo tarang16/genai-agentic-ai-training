@@ -1,0 +1,11 @@
+id,role,region,channel,feedback,rating
+1,Sales Rep,West,Survey,"The monthly Rx report comes too late to do anything about it.",2
+2,Sales Rep,North,Survey,"Dashboard is too slow on mobile network, I stopped opening it.",2
+3,District Manager,West,Survey,"I need to see which territories are trending down without opening 12 rep dashboards.",3
+4,Sales Rep,South,Survey,"Too many charts. Just tell me who to visit.",2
+5,Sales Rep,West,Field visit,"I would like to dismiss doctors who are on leave so they stop appearing.",3
+6,Brand Manager,National,Email,"Would be great to know which competitor brand gained when an HCP drops.",4
+7,Sales Rep,North,Survey,"Please do not send more emails. Put it in the iPad app I already use.",2
+8,District Manager,North,Survey,"Alerts are useful only if reps actually act on them; I want to see follow-up rate per territory.",3
+9,Sales Rep,East,Survey,"I plan my week on Monday morning, that is when I need the information.",4
+10,Sales Rep,South,Field visit,"Network in rural areas is poor, need it offline. My email is ravi.s@example.com if you want to talk.",3

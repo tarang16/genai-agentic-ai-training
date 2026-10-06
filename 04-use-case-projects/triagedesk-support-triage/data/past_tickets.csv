@@ -1,0 +1,21 @@
+ticket_id,created,product,subject,description,resolution,kb_id,jira_key,status
+FD-20311,2026-07-02,VX2780,No signal after new graphics card,"Installed an RTX 4070, monitor says No Signal on HDMI. Old card worked fine.","Customer was on HDMI 2 but input set to HDMI 1. Selected correct input, works.",KB-1001,,resolved
+FD-20344,2026-07-05,TD2455,MacBook Air M2 does not detect monitor via USB-C,"Plugged USB-C from MacBook Air M2, nothing shows. Charging works.",Customer used phone charging cable. Supplied cable fixed it.,KB-1002,,resolved
+FD-20402,2026-07-09,XG2431,Flickering at 165Hz in games,Screen flickers black for a second in games at 165Hz using DP.,"Driver 560.94 regression. Updated to 565.90, flicker gone.",KB-1003,,resolved
+FD-20417,2026-07-11,VX2780,USB-C not working with macOS Sequoia,"After updating to macOS 15 the monitor stays black over USB-C, worked on macOS 14.","Known firmware 1.0.6 handshake bug. Updated firmware to 1.0.8, fixed.",KB-1004,DISP-412,resolved
+FD-20455,2026-07-14,VX3218,Bright dot in centre of screen,"Bought 10 days ago, one green dot always on in the middle.",Zero Bright Dot within 30 days. RMA created.,KB-1005,,resolved
+FD-20490,2026-07-18,VX2780,Speakers not working,"No sound from the monitor speakers, HDMI connected to PC.",Windows output was set to laptop speakers. Selected monitor as output.,KB-1006,,resolved
+FD-20512,2026-07-20,TD2455,Touch not responding after Windows update,Touch stopped working after Windows 11 24H2 update; display fine.,"Known issue with HID driver on 24H2, workaround: reinstall touch driver 3.2. Linked to Jira.",,DISP-455,resolved
+FD-20530,2026-07-22,VX3218,"Firmware update stuck, amber LED blinking","Update failed at 60 percent, now power LED blinks amber and no picture.",Escalated to L2 for service-mode recovery; recovered remotely.,KB-1004,,resolved
+FD-20561,2026-07-25,XG2431,Black screen for 2 seconds when game starts,"Every time a game launches, the screen goes black then comes back.",Normal mode switch when refresh changes. Advised to set desktop to 165Hz too.,KB-1003,,resolved
+FD-20588,2026-07-28,VX2780,HDMI no signal from PS5,"PS5 shows nothing, PC works on same port.",PS5 HDMI handshake: disabled Auto Input Detect and set HDMI 2 manually.,KB-1001,,resolved
+FD-20602,2026-07-30,VX2780,Monitor turns off randomly every few minutes,"Monitor powers off by itself after 5-10 minutes of use, power LED goes off.","Eco mode auto power off bug in firmware 1.0.7, fixed in 1.0.8.",KB-1004,DISP-430,resolved
+FD-20633,2026-08-02,TD2455,Second monitor not detected on MacBook Air,"Two TD2455 on MacBook Air M1, only one works.",M1 Air supports one external display. Recommended DisplayLink dock.,KB-1002,,resolved
+FD-20670,2026-08-06,VX3218,Several dark pixels near the edge,3 dark pixels near the bottom edge.,"Below dark-pixel threshold (5, or 2 in central zone). Not eligible; explained policy.",KB-1005,,resolved
+FD-20701,2026-08-09,XG2431,Colours washed out with HDR,When HDR is enabled in Windows the image is grey and washed out.,Customer had HDR on with brightness 30. Advised HDR mode in OSD and the Windows HDR calibration app.,,,resolved
+FD-20725,2026-08-12,VX2780,No audio over DisplayPort adapter,"Using DP to HDMI adapter, no sound.",Adapter dropping audio; native HDMI cable fixed it.,KB-1006,,resolved
+FD-20760,2026-08-15,TD2455,Touch stops after sleep,Touch works after boot but not after the PC wakes from sleep.,Known: USB selective suspend. Workaround: disable USB selective suspend; fix pending in DISP-455.,,DISP-455,resolved
+FD-20788,2026-08-19,VX3218,Monitor not powering on at all,"No LED, no picture, tried another socket and cable.",Power board failure. RMA created under warranty.,KB-1005,,resolved
+FD-20811,2026-08-22,XG2431,Vertical line across screen,"A thin vertical pink line appeared, visible in all inputs and in OSD.",Panel defect (line visible in OSD). RMA created.,KB-1005,,resolved
+FD-20840,2026-08-26,VX2780,USB-C laptop charging stops,Laptop shows slow charger warning on VX2780 USB-C.,"Laptop needs 90W; VX2780 provides 65W. Expected behaviour, explained.",,,resolved
+FD-20866,2026-08-29,VX2780,Monitor shuts down after 10 minutes,Display switches itself off after ten minutes even while working.,Firmware 1.0.7 eco-mode bug. Updated to 1.0.8.,KB-1004,DISP-430,resolved

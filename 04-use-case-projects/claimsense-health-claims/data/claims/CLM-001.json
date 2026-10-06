@@ -1,0 +1,62 @@
+{
+  "claim_id": "CLM-001",
+  "claim_type": "reimbursement",
+  "policy": {
+    "policy_number": "CP/IND/2024/004512",
+    "inception_date": "2024-04-01",
+    "sum_insured": 500000,
+    "balance_sum_insured": 500000,
+    "age_at_inception": 34,
+    "declared_ped": []
+  },
+  "admission_date": "2026-08-10",
+  "discharge_date": "2026-08-13",
+  "submitted_days_after_discharge": 6,
+  "hospital": "Sunrise Multispeciality Hospital, Pune",
+  "room_type": "single_private",
+  "room_days": 3,
+  "icu_days": 0,
+  "bill": [
+    {
+      "category": "room",
+      "description": "Single private room @4,500 x 3 days",
+      "amount": 13500
+    },
+    {
+      "category": "nursing",
+      "description": "Nursing charges",
+      "amount": 3000
+    },
+    {
+      "category": "surgeon",
+      "description": "Surgeon and anaesthetist fees",
+      "amount": 45000
+    },
+    {
+      "category": "ot",
+      "description": "Operation theatre charges",
+      "amount": 20000
+    },
+    {
+      "category": "pharmacy",
+      "description": "Medicines",
+      "amount": 18000
+    },
+    {
+      "category": "consumables",
+      "description": "Surgical consumables",
+      "amount": 6000
+    },
+    {
+      "category": "investigations",
+      "description": "CBC, USG abdomen, CT abdomen",
+      "amount": 9500
+    },
+    {
+      "category": "non_medical",
+      "description": "Admission kit and attendant food",
+      "amount": 2200
+    }
+  ],
+  "discharge_summary": "Patient Mr. Rahul Deshmukh (UHID 448812, mobile 98220 11234), 36 y/o male, admitted with acute right iliac fossa pain, fever and vomiting for 1 day. CT abdomen: acute appendicitis without perforation. Underwent laparoscopic appendectomy on 10/08/2026. Post-op uneventful. No known comorbidities. No history of alcohol or tobacco use. Discharged in stable condition."
+}
