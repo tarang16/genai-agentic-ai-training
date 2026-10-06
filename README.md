@@ -119,6 +119,23 @@ how the other use cases in the sheet map onto them.
 
 ---
 
+## 05 · Reference guides
+
+### Hugging Face Model Guide ([PDF](05-reference-guides/Hugging_Face_Model_Guide.pdf) · [Word](05-reference-guides/Hugging_Face_Model_Guide.docx))
+
+58 free, open Hugging Face models across 30 use cases, each with working code, the output it produces,
+size, licence and tips. Covers sentiment, emotion, zero-shot classification, NER, question answering,
+language detection, financial sentiment, toxicity and prompt-injection detection, summarisation,
+translation (including Indian languages), small and GPU-sized LLMs, code generation, embeddings and
+rerankers for RAG, image classification, CLIP, object detection, segmentation, depth, captioning, OCR,
+vision-language models, image generation, speech-to-text, text-to-speech and audio classification.
+Includes a quick-reference table, gated models (Llama, Gemma, IndicTrans2) and a troubleshooting section.
+
+The code targets Transformers 5, which removed several pipeline shortcuts (question answering,
+summarisation, translation, image-to-text); the guide's snippets work on both Transformers 4 and 5.
+
+---
+
 ## Colab links
 
 The original Colab notebooks for this course. They are listed in the order they
